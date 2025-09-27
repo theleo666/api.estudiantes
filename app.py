@@ -12,7 +12,9 @@ load_dotenv()
 app =Flask(__name__)
 # Configuración de la base de datos PostgreSQL
 app.config['SQLALCHEMY_DATABASE_URI'] = os.getenv('DATABASE_URL')
+app.config['SQLALCHEMY_DATABASE_URI'] = "postgresql://leonardo:746Xh8ZC9KGjJyv5O884AXg77Xxj2Yl0@dpg-d2vp4ff5r7bs73am18pg-a.oregon-postgres.render.com/db_tec_4pny"
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
+
 db = SQLAlchemy(app)
 
 #Modelo de la base de datos
