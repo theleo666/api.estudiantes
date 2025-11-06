@@ -26,11 +26,7 @@ class Estudiante(db.Model):
     ap_paterno = db.Column(db.String(100))
     ap_materno = db.Column(db.String(100))
     semestre = db.Column(db.Integer)
-
-# =======================================================
-# RUTA PRINCIPAL (VISUALIZACIÓN JSON)
-# =======================================================
-
+    
 @app.route('/', methods=['GET'])
 def get_all_estudiantes_json():
     """
